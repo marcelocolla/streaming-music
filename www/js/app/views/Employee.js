@@ -1,0 +1,1 @@
+define(function(e){"use strict";var t=(e("jquery"),e("underscore")),i=e("backbone"),n=e("text!tpl/Employee.html"),r=t.template(n);return i.View.extend({initialize:function(){this.render()},render:function(){return this.$el.html(r(this.model.attributes)),this}})});

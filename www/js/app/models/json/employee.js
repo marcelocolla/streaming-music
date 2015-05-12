@@ -1,0 +1,1 @@
+define(function(e){"use strict";var t=(e("jquery"),e("backbone")),o=t.Model.extend({urlRoot:"http://localhost:3000/employees",initialize:function(){this.reports=new l,this.reports.url=this.urlRoot+"/"+this.id+"/reports"}}),l=t.Collection.extend({model:o,url:"http://localhost:3000/employees"});return{Employee:o,EmployeeCollection:l}});

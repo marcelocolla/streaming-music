@@ -1,0 +1,1 @@
+define(function(e){"use strict";var t=(e("jquery"),e("underscore")),i=e("backbone"),n=e("text!tpl/EmployeeList.html"),r=t.template(n);return i.View.extend({initialize:function(){this.render(),this.collection.on("reset",this.render,this)},render:function(){return this.$el.html(r({employees:this.collection.toJSON()})),this}})});
